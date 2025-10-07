@@ -2,6 +2,9 @@ services:
   - type: web
     name: ai-powered-insights-backend
     env: python
-    buildCommand: ""
+    region: oregon  # or any region close to you
+    buildCommand: pip install -r requirements.txt
     startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
-    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
