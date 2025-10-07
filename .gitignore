@@ -1,0 +1,44 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+/.venv
+
+# dotenv / secrets
+.env
+.env.local
+.env.*.local
+
+# Google service account JSON (do NOT commit)
+*.json
+
+# macOS
+.DS_Store
+
+# logs
+*.log
+
+# Editor folders
+.vscode/
+.idea/
+
+# Distribution / build
+dist/
+build/
+*.egg-info/
+
+# Node / React (if you have frontend in same repo)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+pnpm-lock.yaml
+
+# Other
+coverage/
+*.sqlite3
