@@ -5,7 +5,7 @@ function Dashboard() {
   const [openSections, setOpenSections] = useState({});
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/insights")
+    fetch("https://ai-competitive-insights.herokuapp.com/api/insights")
       .then((res) => res.json())
       .then((data) => {
         if (data.length > 0 && data[0].insights_raw) {
